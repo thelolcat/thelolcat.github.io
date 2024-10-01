@@ -1,0 +1,49 @@
+/* body of the website.
+    includes greeting fade-in animation */
+body{
+    background-image: url(alostfirefly.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    animation: greeting-fade-in-body 3s ease-out;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: -12vh;
+}
+@keyframes greeting-fade-in-body{
+    from{
+        backdrop-filter: blur(6px);
+    }
+    to{
+        backdrop-filter: none;
+    }
+}
+
+/* greeting division */
+.greeting{
+    padding-top: 12vh;
+    padding-bottom: 12vh;
+    height: 35vw;
+    color:aliceblue;
+    font-size: 5vw;
+    animation: greeting-fade-in 1.5s ease-out 0s forwards;
+}
+@keyframes greeting-fade-in{
+    from{
+        padding-left: 100px;
+        opacity: 0;
+    }
+    to{
+        padding-left: 20px;
+        opacity: 100;
+    }
+}
+
+.introduction{
+    width: inherit;
+    background-color: #f0f8ff;
+
+    text-align: center;
+    margin: -10px;
+    font-size: 20px;
+    padding: 10px 10vw;
+}
