@@ -1,2 +1,2 @@
 # lolcat-portfolio
-A simple portfolio. Of course, do check it out!
+A simple portfolio. Do check it out!
