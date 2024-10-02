@@ -23,8 +23,10 @@ body{
     padding-top: 12vh;
     padding-bottom: 12vh;
     height: 35vw;
+    
     color:aliceblue;
-    font-size: 5vw;
+    font-size: calc(16px + 4vw);
+    
     animation: greeting-fade-in 1.5s ease-out 0s forwards;
 }
 @keyframes greeting-fade-in{
@@ -46,4 +48,15 @@ body{
     margin: -10px;
     font-size: 20px;
     padding: 10px 10vw;
+}
+
+.link{
+    font-size: 25px;
+    font: bold;
+    color: black;
+    padding: 0px 5px;
+    transition: all 0.5s;
+}
+.link:hover{
+    font-size: 27px;
 }
