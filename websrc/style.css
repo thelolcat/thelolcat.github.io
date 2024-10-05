@@ -82,27 +82,18 @@ body{
 }
 
 .project-panel{
-    width: auto;
+    padding: 0% 10%;
     float: initial;
     animation: project-cycle 5s linear 0s infinite forwards;
+    text-align: start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-@keyframes project-cycle { /*TODO Fix project cycle animation*/
-    0%{
-        opacity: 0%;
-        top: 20vh;
-    }
-    10%{
-        opacity: 100%;
-        top: 0vh;
-    }
-    90%{
-        opacity: 100%;
-        top: 0vh;
-    }
-    100%{
-        opacity: 0%;
-        top: 20vh;
-    }
+.project-image{
+    flex-grow: 1;
+    padding: 3px;
+    align-items: center;
 }
 
 /*footer. Contains links to other websites*/
