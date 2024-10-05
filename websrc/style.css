@@ -8,6 +8,8 @@ body{
     animation: greeting-fade-in-body 3s ease-out;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-top: -12vh;
+
+    overflow-x: hidden;
 }
 @keyframes greeting-fade-in-body{
     from{
@@ -40,11 +42,13 @@ body{
     }
 }
 
-/*introduction division*/
-.introduction{
+/*divisions which are set in a white background*/
+.whitepads{
+    position: relative;
+    z-index: 1;
     width: inherit;
     background-color: #f0f8ff;
-    box-shadow: 0px -15px 20px rgba(0, 0, 0, 100);
+    box-shadow: 0px -15px 20px rgba(0, 0, 0, 100), 0px 4px 20px rgba(0, 0, 0, 100);
 
     text-align: center;
     margin: -10px;
@@ -62,6 +66,43 @@ body{
 }
 .link:hover{
     font-size: 27px;
+}
+
+.about{
+    position: relative;
+    margin: -10px;
+    background-image: url(jamheist.jpg);
+}
+.about-inset{
+    color: #ffffff;
+    backdrop-filter: blur(3px);
+    margin: -10px;
+    padding: 10px 10vw;
+    font-size: 27px;
+}
+
+.project-panel{
+    width: auto;
+    float: initial;
+    animation: project-cycle 5s linear 0s infinite forwards;
+}
+@keyframes project-cycle { /*TODO Fix project cycle animation*/
+    0%{
+        opacity: 0%;
+        top: 20vh;
+    }
+    10%{
+        opacity: 100%;
+        top: 0vh;
+    }
+    90%{
+        opacity: 100%;
+        top: 0vh;
+    }
+    100%{
+        opacity: 0%;
+        top: 20vh;
+    }
 }
 
 /*footer. Contains links to other websites*/
