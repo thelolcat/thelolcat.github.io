@@ -82,18 +82,25 @@ body{
 }
 
 .project-panel{
-    padding: 0% 10%;
-    float: initial;
-    animation: project-cycle 5s linear 0s infinite forwards;
+    width: 80%;
+    height: 45vh;
     text-align: start;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    overflow: scroll;
+    display: inline-block;
+    white-space: nowrap;
+    justify-content: start;
+    vertical-align: bottom;
 }
 .project-image{
-    flex-grow: 1;
-    padding: 3px;
+    height: 40vh;
+    width: auto;
+    padding: 10px;
     align-items: center;
+    transition: all 0.2s ease-out;
+}
+.project-image:hover{
+    height: calc(40vh + 0.5vh);
+    padding: calc(10px - 0.5vh);
 }
 
 /*footer. Contains links to other websites*/
