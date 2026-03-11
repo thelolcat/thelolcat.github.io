@@ -1,3 +1,16 @@
+@-moz-document url-prefix() {
+    .intro, .activity, .project-tile, .firefox{
+      opacity: 100% !important;
+    }
+  }
+
+.firefox{
+    font-size: 2vmax;
+    padding-top: 3vh;
+    margin-bottom: -6vh;
+    opacity: 0%;
+}
+
 body{
     overflow-x: hidden;
     padding: 0vh 0vw 10vh 5vw;
@@ -29,6 +42,7 @@ body{
     opacity: 0%;
     animation: fade-in-runtime linear;
     animation-timeline: view();
+    
 }
 
 .activity{
