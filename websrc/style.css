@@ -2,25 +2,14 @@ body{
     overflow-x: hidden;
     padding: 0vh 0vw 10vh 5vw;
     background-color: rgb(0, 0, 0);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: monospace;
     font-size: 3vmax;
     font-weight: bold;
     color: white;
     animation: fade-in-init 1.5s ease-in;
 }
 
-a, a:visited, a:hover, a:active {
-    color: inherit;
-    text-decoration: none;
-  }
-
-.hero{
-    margin-top: -15vmin;
-    margin-bottom: -5vmin;
-    font-size: 15vmin;
-}
-
-@keyframes fade-in-init {
+@keyframes fade-in-init { 
     0%{
         opacity: 0%;
     }
@@ -29,8 +18,24 @@ a, a:visited, a:hover, a:active {
     }
 }
 
+.hero{
+    margin-top: -10vmin;
+    margin-bottom: -5vmin;
+    font-size: 12vmin;
+}
+
 .intro{
-    padding-bottom: 20vh;
+    padding-right: 5vw;
+    opacity: 0%;
+    animation: fade-in-runtime linear;
+    animation-timeline: view();
+}
+
+.activity{
+    padding-right: 5vw;
+    padding-top: 10vh;
+    padding-bottom: 15vh;
+    opacity: 0%;
     animation: fade-in-runtime linear;
     animation-timeline: view();
 }
@@ -41,6 +46,7 @@ a, a:visited, a:hover, a:active {
 
 .project-tile{
     position: relative;
+    opacity: 0%;
     animation: fade-in-runtime linear;
     animation-timeline: view();
     
