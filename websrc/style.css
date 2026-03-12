@@ -1,19 +1,25 @@
+
+
 @-moz-document url-prefix() {
-    .intro, .activity, .project-tile, .firefox{
+    .intro, .activity, .project-tile{
       opacity: 100% !important;
+    }
+    .firefox{
+        display: block !important;
+        opacity: 100% !important;
     }
   }
 
 .firefox{
+    display: none;
     font-size: 2vmax;
     padding-top: 3vh;
-    margin-bottom: -6vh;
     opacity: 0%;
 }
 
 body{
     overflow-x: hidden;
-    padding: 0vh 0vw 10vh 5vw;
+    padding: 0vh 0vw 5vh 5vw;
     background-color: rgb(0, 0, 0);
     font-family: monospace;
     font-size: 3vmax;
